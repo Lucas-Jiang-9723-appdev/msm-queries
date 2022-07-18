@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get("/directors/youngest",{:controller => "directors", :action=>"youngest"})
   get("/directors/eldest",{:controller => "directors", :action=>"eldest"})
   get("/directors/:director_id",{:controller => "directors", :action=>"detail"})
-  # get("",{:controller => "", :action=>""})
+  get("/movies/:movie_id",{:controller => "movies", :action=>"detail"})
+  get("/actors/:actor_id",{:controller => "actors", :action=>"detail"})
 end

@@ -1,3 +1,3 @@
-class Chracter < ApplicationRecord
+class Character < ApplicationRecord
 end
 

@@ -18,10 +18,10 @@
       </td>
       <td> <%= thing.title%></td>
       <td> <%= thing.year%></td>
-      <td> <%= Director.where({:id => thing.director_id}).name%></td>
+      <td> <%= Director.where({:id => thing.director_id}).at(0).name%></td>
       <td>
-        <a href ="/<%= thing.id%>">
-        Show detail
+        <a href ="/movies/<%= thing.id%>">
+        Show details
       </td>
     </tr>
   <% end %>
