@@ -1,0 +1,3 @@
+class Chracter < ApplicationRecord
+end
+
