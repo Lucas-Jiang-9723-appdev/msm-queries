@@ -18,7 +18,7 @@
       </td>
       <td> <%= thing.title%></td>
       <td> <%= thing.year%></td>
-      <td> <%= @list_of_directors.where(:id => thing.director_id).name%></td>
+      <td> <%= Director.where({:id => thing.director_id}).name%></td>
       <td>
         <a href ="/<%= thing.id%>">
         Show detail
